@@ -1,0 +1,152 @@
+.add-form-container{
+    /* border: 1px solid black; */
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-color: #05011aa5;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.inner-form-container{
+    /* border: 1px solid black; */
+    border-radius: 22px;
+    background-color: white;
+    /* height: 70%; */
+    width: 40%;
+    min-width: 38rem;
+    
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    padding:0 1rem  ;
+}
+
+.back{
+    border: 1px solid black;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.back button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.main-form{
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    padding:.5rem .5rem 0;
+}
+
+.main-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container{
+    max-height: 500px;
+    overflow-y: scroll;
+    /* overflow: hidden; */
+    scrollbar-width: thin;
+    
+    /* border: 1px solid black; */
+    
+}
+
+.main-form form label{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.gen-input{
+    width: 100%;
+    height: 2rem;
+    margin: 1rem 0;
+    border: none;
+    border-bottom: 1px solid rgb(162, 162, 162);
+    outline: none;
+}
+
+#content-text{
+    width: 100%;
+    min-height:2rem ;
+    text-decoration: none;
+    margin: 1rem 0 0;
+    border: none;
+    border-bottom: 1px solid rgb(162, 162, 162);
+    outline: none;
+   
+}
+
+.image-preview-container {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.image-preview {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.preview-img-container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.delete-img{
+    background-color: transparent;
+    border: none;
+}
+
+.delete-img img{
+    width: 20px;
+    height: 20px;
+
+}
+
+.add-form-buttons{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    padding: 1px 1rem;
+    margin-top: 1rem;
+    
+}
+
+.add-form-buttons button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: rgb(71, 71, 71);
+    padding: 1px 1rem;
+}
+
+.submit-btn{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.form-error-msg{
+    color: rgb(149, 17, 17);
+}

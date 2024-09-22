@@ -1,0 +1,29 @@
+{
+  "notes": [
+    {
+      "title": "note1",
+      "content": "Validations are part and parcel of almost every form, they’re an application’s first line of defense against unwanted data. Validations ensure that incorrect data doesn’t reach the backend servers and, eventually the databases. Ideally, most software data is validated at every layer, i.e., the Frontend, Backend, and Database.",
+      "id": "f735"
+    },
+    {
+      "title": "10 years later, Apple Pay is amazing — and about to change--change-diver",
+      "content": "Apple made mobile payments easy and fast, as long as you did it Apple’s way. We’re about to see what happens when there are other ways.",
+      "id": "fa77"
+    },
+    {
+      "id": "61f5",
+      "title": "DJI’s $199 Neo selfie drone is going to be everywhere",
+      "content": "The HoverAir X1 may have popularized easy-to-use selfie drones, but it’s DJI’s new $199 Neo we’ve been testing that looks set to dominate sales. It’s launching globally today and does almost everything the $350 X1 can do and so much more.  Like the X1, DJI’s new Neo is a drone you primarily buy to record yourself doing things for social media. It flies itself, no controller necessary — you simply push a button on the drone to cycle through a list of predefined flights like follow, hover in place, orbit overhead, and zoom in and out. It launches in seconds, begins recording, and then returns to land in the palm of your hand without requiring previous flying experience."
+    },
+    {
+      "id": "ad41",
+      "title": "Are more sports coming to Prime Video?",
+      "content": "Sources tell the New York Post that Amazon is in talks with Bally Sports for a deal that would simultaneously air MLB, NBA, and NHL games on Prime Video and cable."
+    },
+    {
+      "id": "2ad6",
+      "title": "to be deleted-",
+      "content": "ddddddddddddddddd"
+    }
+  ]
+}

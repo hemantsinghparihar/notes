@@ -1,0 +1,188 @@
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: masonry;
+    gap: 0.6rem;
+    padding: 20px;
+   
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.card {
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 10px;
+    overflow: hidden;
+    
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    margin: .5rem;
+    
+    
+    padding: 1rem 1rem 0;
+    font-family: "Inter", sans-serif;
+    transition: box-shadow 0.3s ease-in-out;
+    
+}
+
+.card:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+
+  
+ 
+
+
+.title{
+    font-size: .8rem;
+    font-weight: 500;
+    padding: 2px;
+    color: 
+    rgb(17, 24, 39);
+}
+
+.content{
+    font-size: 1.125rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    color: rgb(75 85 99);
+}
+
+.card-controlls{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+    
+    height: 30px;
+}
+
+.card-controlls button{
+    background: none;
+    border: none;
+    margin: .2rem .9rem .1rem;
+    
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; 
+    cursor:pointer ;
+   
+}
+
+.card-controlls .edit img,.card-controlls .delete img{
+    width: 20px;
+    height: 20px;
+}
+
+.card:hover .card-controlls button {
+    
+    opacity: 1;
+}
+
+.card-img-container{
+    border: 1px solid;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: none;
+   
+
+}
+
+.single-card-image {
+    
+    position: relative;
+
+}
+
+
+.delete-img{
+    position: absolute;
+    top: 1%;
+}
+
+.card-img{
+    
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.card-img-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.single-card-image-wrapper {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-delete {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 50%;
+    padding: 4px 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-image:hover .img-delete {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 999;
+}
+
+.img-delete img {
+    width: 15px;
+    height: 15px;
+}
+
+
+
+
+
+
+.my-masonry-grid {
+    display: flex;
+    margin-left: -15px; /* Adjust according to your card padding */
+    width: auto;
+  }
+  .my-masonry-grid_column {
+    padding-left: 10px; /* Adjust according to your card padding */
+    background-clip: padding-box;
+  }
+  
+  /* Example Card styling */
+  /* .card {
+    background-color: white;
+    margin-bottom: 30px; 
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  } */
+  
+

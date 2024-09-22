@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    /* border: 2px solid black; */
+    
+    width: 100%;
+}
+
+.container{
+    /* border: 2px solid black; */
+    max-width: 1340px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+}
+
+.card-container{
+   
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+    padding: 20px;
+   
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.filt-card {
+  border: 1px solid rgb(184, 184, 184);
+  border-radius: 10px;
+  overflow: hidden;
+  
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  margin: .5rem;
+  
+  
+  padding: 1rem 1rem 0;
+  font-family: "Inter", sans-serif;
+  transition: box-shadow 0.3s ease-in-out;
+  
+}
+
+.filt-card:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+
+
+
+
+
+.filt-title{
+  font-size: .8rem;
+  font-weight: 500;
+  padding: 2px;
+  color: 
+  rgb(17, 24, 39);
+}
+
+.filt-content{
+  font-size: 1.125rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  color: rgb(75 85 99);
+}
+/* .card-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  } */
+
+
+  .button-div{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+    
+    height: 30px;
+}
+
+.button-div button{
+    background: none;
+    border: none;
+    margin: .2rem .9rem .1rem;
+    
+    
+    transition: opacity 0.3s ease-in-out; 
+    cursor:pointer ;
+   
+}
+
+.button-div .edit img,.card-controlls .delete img{
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
+.add-note button{
+    border: none;
+    background-color: transparent;
+    font-size: 3rem;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+.add-note{
+    /* border: 1px solid black;
+    border-radius: 50%; */
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aliceblue; */
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.custom-button {
+    height: 2.5rem; /* 10 in Tailwind is 2.5rem */
+    width: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem; /* Rounded-lg */
+    border: 1px solid #f4f4f5; /* Border-zinc-100 and inset shadows */
+    background-color: white; /* Bg-white */
+    box-shadow:
+      0 -1px 0 0px #d4d4d8 inset,  /* Inset shadow for the border */
+      0 0 0 1px #f4f4f5 inset,     /* Another inset border shadow */
+      0 0.5px 0 1.5px #fff inset;  /* Inner white highlight */
+    color: #1f2937; /* Text-zinc-950 */
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .custom-button:hover {
+    background-color: #fafafa; /* Hover:bg-zinc-50 */
+    background-image: linear-gradient(to bottom, #657489, #dcdcdc); /* Hover:via-zinc-900 to-zinc-800 */
+  }
+  
+  .custom-button:active {
+    box-shadow:
+      -1px 0px 1px 0px #e4e4e7 inset,  /* Active shadow */
+      1px 0px 1px 0px #e4e4e7 inset,
+      0px 0.125rem 1px 0px #d4d4d8 inset; /* Active inner shadow */
+  }
+  
+  .custom-button-content {
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .custom-button:active .custom-button-content {
+    transform: translate3d(0, 1px, 0); /* Move the content down on active */
+  }
+  
+  .custom-icon {
+    height: 1rem; /* H-4 (1rem) */
+    width: 1rem;  /* W-4 */
+    fill: #1f2937; /* Fill color for text-zinc-950 */
+  }
+  
+
+.add-note button{
+    background-color: white;
+}
+
+.inner-form-container{
+    border: 1px solid black;
+    border-radius: 22px;
+    background-color: white;
+    /* height: 70%; */
+    width: 40%;
+    min-width: 38rem;
+    
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    padding:0 1rem  ;
+}
+
+.main-form{
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    padding:.5rem .5rem 0;
+}
+
+.main-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container{
+    max-height: 500px;
+    overflow-y: scroll;
+    /* overflow: hidden; */
+    scrollbar-width: thin;
+    
+}
+
+.gen-input{
+    width: 100%;
+    height: 2rem;
+    margin: 1rem 0;
+    border: none;
+    border-bottom: 1px solid rgb(162, 162, 162);
+    outline: none;
+}
+
+#content-text{
+    width: 100%;
+    min-height:2rem ;
+    text-decoration: none;
+    margin: 1rem 0;
+    border: none;
+    border-bottom: 1px solid rgb(162, 162, 162);
+    outline: none;
+}
