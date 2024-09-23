@@ -186,3 +186,9 @@
   } */
   
 
+.notes-container{
+    max-height: 500px;
+    overflow-y: scroll;
+    /* overflow: hidden; */
+    scrollbar-width: thin;
+}

@@ -11,6 +11,7 @@ import bin from '../assets/bin.png'
 import pencil from '../assets/pencil.png'
 import FilterCard from '../components/ui/FilterCard';
 import TextareaAutosize from 'react-textarea-autosize';
+import NoteCard from '../components/ui/NoteCard';
 
 
 
@@ -256,6 +257,14 @@ const handleTextAreaInput = (e) => {
                 </div>
             </div>
         }
+
+    {
+        note && (
+            <>
+                <NoteCard />
+            </>
+        )
+    }
 
         <div className="add-note" >
             {/* <button onClick={handleAdd}>+</button> */}

@@ -294,6 +294,7 @@ function Card(props) {
   const dispatch = useDispatch();
   const notes = useSelector((state) => state.notes.notes);
   const edit = useSelector((state) => state.notes.edit);
+  const note=useSelector((state=>state.notes.note))
   
   const truncate = (str, max) => {
     return str.length >= 100 ? str.slice(0, max) + '...' : str;
@@ -353,6 +354,14 @@ console.log('✌️sortedNotes --->', sortedNotes);
     700: 1      // 1 column on small screens
   };
 
+  const handleNotePopup=(e,id)=>{
+    e.preventDefault();
+    dispatch(setNote(!note))
+console.log('✌️note inside handlenotePopup --->', note);
+    const newNote = notes.filter((one) => one._id === id);
+    dispatch(setSingleNote(newNote[0]));
+  }
+
   return (
     <Masonry
       breakpointCols={breakpointColumnsObj} // Pass the breakpoint configuration
@@ -363,8 +372,8 @@ console.log('✌️sortedNotes --->', sortedNotes);
 
 {sortedNotes &&
         sortedNotes.map((note, index) => (
-          <Link to={`/notes/${note._id}`} style={{ textDecoration: 'none', color: 'black' }} key={note._id}>
-            <div className="card">
+          // <Link to={`/notes/${note._id}`} style={{ textDecoration: 'none', color: 'black' }} key={note._id}>
+            <div className="card" onClick={(e)=>{handleNotePopup(e,note._id)}}>
               <div className="title">
                 <h2>{note.title}</h2>
               </div>
@@ -412,7 +421,7 @@ console.log('✌️sortedNotes --->', sortedNotes);
                 </button>
               </div>
             </div>
-          </Link>
+          // </Link>
         ))}
     </Masonry>
   );
