@@ -12,14 +12,14 @@ A web application with CRUD (Create, Retrieve, Update, Delete) functionality bui
 
 # Prerequisites
 Before you begin, ensure you have met the following requirements:
- * Node.js: Make sure you have Node.js installed. You can download it from nodejs.org.
+ *  Node.js: Make sure you have Node.js installed. You can download it from nodejs.org.
  * MongoDB: You will need a MongoDB instance. You can set up one locally or use a cloud-hosted solution like MongoDB Atlas.
 
 # Approach
-  ## Backend
-  ### General
-  * Express routers are used to handle user and note functions.
-  * Mongoose is used to handle MongoDB connection.
+## Backend
+### General
+* Express routers are used to handle user and note functions.
+* Mongoose is used to handle MongoDB connection.
 
   ### Creating Notes
    
