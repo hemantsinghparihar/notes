@@ -62,5 +62,25 @@ Before you begin, ensure you have met the following requirements:
   cd client
   npm i
   ```
+
+  #### Run mongo db server
+  run this command in terminal
+  ```
+  mongod
+  ```
+
+  #### run server
+  ```
+  cd server
+  npm run dev
+  ```
+
+  #### run frontend
+  ```
+  cd client
+  npm run dev
+  ```
+  
+  
   
   
