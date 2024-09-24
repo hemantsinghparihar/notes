@@ -41,3 +41,26 @@ Before you begin, ensure you have met the following requirements:
   ### Deleting Notes
     * An HTTP DELETE request is sent to the API.
     * It uses findByIdAndDelete method from Mongoose.
+ 
+  ## Installation
+  ####  1.Clone The Repository
+  ```
+   https://github.com/hemantsinghparihar/notes.git
+  ```
+
+  #### 2.Navigate to the repository
+  ``` cd notes ```
+
+  #### 3.Install server dependencies
+  ```
+      cd server
+      npm i
+   ```
+
+  #### 4. Install frontend dependencies
+  ```
+  cd client
+  npm i
+  ```
+  
+  
